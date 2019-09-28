@@ -28,14 +28,23 @@ def main(url=''):
     except KeyError:
         print("No date in response!!!")
         raise KeyError
-
+    home_work(d['time'])
     return True
 
 
-def home_work():
-    # Ваш захист
-    pass
-
+def home_work(t):
+   if "AM" in t:
+        print('*' *15)
+        print ("Have a nice day")
+        return 'am'
+   elif "PM" in t:
+       print('*' *15)
+       print ("Have a nice night")
+       return 'pm'
+   else:
+       print('*' *15)
+       print ("Program can't calculate what is now")
+       return 0
 
 if __name__ == "__main__":
     a = "="*40
