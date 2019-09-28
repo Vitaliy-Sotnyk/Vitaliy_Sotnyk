@@ -1,5 +1,5 @@
 import unittest
-from app import main
+from app import main, home_work
 
 
 class TestClass(unittest.TestCase):
@@ -7,6 +7,9 @@ class TestClass(unittest.TestCase):
         # Дана функція налаштовує початкові агрументи визначені лише для класу
         self.date_url = 'http://date.jsontest.com/'
         self.ip_url = 'http://ip.jsontest.com/'
+        self.date_am = 'the AM'
+        self.date_pm = 'the PM'
+        self.date_in = 'incorrect value'
 
     def test_date_work_successfully(self):
         # Перевіряєм чи функція відправювала до кінця і повернулі True
@@ -21,6 +24,12 @@ class TestClass(unittest.TestCase):
         with self.assertRaises(Exception):
             main(self.ip_url)
 
-    def test_home_work(self):
+    def test_home_work_am(self):
         # Ваш захист
-        self.assertTrue(True)
+        self.assertTrue(home_work(self.date_am) == 'am')
+    def test_home_work_pm(self):
+        # Ваш захист
+        self.assertTrue(home_work(self.date_pm) == 'pm')
+    def test_home_work_in(self):
+        # Ваш захист
+        self.assertFalse(home_work(self.date_in))
