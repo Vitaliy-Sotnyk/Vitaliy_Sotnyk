@@ -11,14 +11,14 @@ install:
 
 test:
 	@echo "Start tests."
-	@pytest test.py>result.txt
+	@pytest tests.py > result.txt
 
 run:
 	@echo "Run Python app."
-	@python app.py>>result.text
+	@python app.py >> result.text
 
 deploy:
 	@echo "Adding and Committing results.txt to git."
 	@git add -A
-	@git commit - m "Lab2: ..."
+	@git commit -m"Lab2: result"
 	@git push
