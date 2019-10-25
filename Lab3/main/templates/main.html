@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vieport" content="inital-scale=1.0, width=device-width">
+    <title>The Witcher 3</title>
+</head>
+<style >
+*{
+	margin: 0;
+	padding: 0;
+}
+.conteiner{
+	max-width: 100%;
+	min-width: 320px;
+	background: hsla(0, 0%, 4%, 0.95);
+}
+.wrap{
+	max-width: 1900px;
+	padding: 0 0;
+	margin: 0 auto;
+}
+.button a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 700;
+	background-color: #ffffff00;
+	display: inline-block;
+	padding: 5px 20px;
+	border-bottom: 1px solid #2b2b30
+}
+.button  ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+button a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+@media(max-width:768px){
+
+	.button a{
+		font-size: 14px;
+	}
+	button a{
+		color: rgb(46, 46, 46);
+	}
+}
+</style>
+<style>
+.header{
+	background: url(./image/1.jpg)center no-repeat;
+	background-size: cover;
+	margin-bottom: 60px;
+	position: relative;
+}
+.header::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 1;
+}
+.header_wrap{
+	position: relative;
+	z-index: 2;
+	height: 65vh;
+}
+.header_top{
+	position: fixed;
+	width: 99%;
+	background-color: #0f0f11;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	font-family: 'Oswald', sans-serif;
+	z-index: 3;
+}
+.header_logo{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+}
+.header_button3{
+	margin-right: 30px;
+}
+.header_button3 a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 700;
+	background-color: #ffffff00;
+	display: inline-block;
+	padding: 5px 10px;
+	border-bottom: 1px solid #2b2b30
+}
+.header_button3 ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.header_button_list{
+	width: 80px;
+	position: relative;
+	height: auto;
+}
+.header_button_drop{
+	margin: 0;
+	font-size: 16px;
+	position: absolute;
+    left: -40px;
+	width: 170px;
+	height: auto;
+	top:-999em;
+    opacity: 0;
+}
+.header_button_drop a{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.header_button_list:hover .header_button_drop{
+	border-top: 10px solid rgba(0, 0, 0, 0.0);
+	transition: 0.8s all;
+	top: 1.95em;
+	opacity: 1;
+}
+.header_button_list::after{
+	content: " ";
+	position: absolute;
+	border: 4px solid;
+	border-color: white transparent transparent  transparent ;
+	top: 1.95em;
+	left: 3em;
+
+}
+.header h1{
+	text-align: center;
+	font-size: 54px;
+	line-height: 60px;
+	background: linear-gradient(to right, rgb(167, 3, 3), rgb(255, 40, 40));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight: 400;
+	max-width: 970px;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	padding: 0 15px;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%);
+	font-family: 'Pacifico', cursive;
+}
+ .header a:hover{
+	background-color: #2b2b30;
+	transition: 0.5s all;
+	padding: 7px 5px 7px 15px;
+}
+</style>
+<style>
+.first_s{
+    margin: 0px auto;
+    display: flex;
+    align-items: flex-start;
+}
+.first_s_img{
+    display: flex;
+    flex-basis: 50%;
+    margin-left: 120px;
+    margin-right: 40px;
+    margin-bottom: 90px;
+    position: relative;
+}
+.first_s_img img{
+    display: block;
+    position: relative;
+    max-width: 650px;
+}
+.first_s_text{
+
+    flex-basis: calc(100%-50%-40px);
+}
+.first_s_text .first_s_title{
+    font-size: 32px;
+    line-height: 48px;
+    color: rgb(104, 104, 104);
+    font-family: 'Lemonada', cursive;
+}
+.first_s_text p{
+    max-width: 90%;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 25px 0;
+    color: rgb(104, 104, 104);
+    margin-right: 90px;
+    font-family: 'Cuprum', sans-serif;
+}
+@media(max-width:1400px){
+	.first_s{
+        margin: 20px auto;
+    }
+    .first_s_img{
+        margin-right: 30px;
+         flex-basis: auto;
+    }
+    .first_s_text{
+        flex-basis: calc(100%-43%-30px);
+    }
+}
+@media(max-width:1200px){
+    .first_s{
+       flex-direction: column;
+    }
+    .first_s_img{
+        margin-left: 20%;
+        flex-basis: auto;
+    }
+</style>
+<body>
+<div class="conteiner">
+    <div class="header">
+        <header class="wrap header_wrap">
+            <div class="header_top">
+                <div class="header_logo">
+                    <img src="image/logo.jpg" alt="">
+                </div>
+                <div class="button header_button1">
+                    <a href="">The Witcher </a>
+                </div>
+                <div class="button header_button2">
+                    <a href="">The Witcher 2</a>
+                </div>
+                <div class="header_button3">
+                    <ul class="header_button">
+                        <li class="header_button_list"><a href="">Аудіокниги</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h1><p><span>The Witcher 3: Wild Hund</p></span></h1>
+        </header>
+    </div>
+    <div class="first_s  wrap">
+        <div class="first_s_img">
+            <img src="image/three.jpg" alt="">
+        </div>
+
+        <div class="first_s_text">
+            <p class="first_s_title">The Witcher 3</p>
+            <p>Якщо тобі хочеться провести час в неймовірному світі? Полювати на магічних чудовищ, або ж допомогти поселенню позбутись бандитам?</br>
+                А можливо тобі хочеть бути в центрі політичних подій і вирішувати своїми діями долю не одного королівства?</br>
+                Тоді тобі терміново треба зіграти Відьмака.</br>
+                Тут ти знайдеш все: </br>
+                - світ що затягне тебе не на одну годину. </br>
+                - безумовно цікавий сюжет, де від одного рішення може змінитись доля окремого першонажа, або ж цілого поселення.</br>
+                - неймовірний вибір додаткових завдань, що розширять ігру на більше, ніж одну сотню годин.</br>
+                - а також неймовірно великий вибір зброї та спорядження, для цінителів різноманіття.
+
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
