@@ -17,7 +17,7 @@ RUN git clone https://github.com/Vitaliy-Sotnyk/Vitaliy_Sotnyk.git
 
 # Створюємо остаточну робочу папку з Веб-сайтом та копіюємо туди файли
 WORKDIR /app
-RUN cp -r /lab4/* .
+RUN cp -r /lab/Vitaliy_Sotnyk/Lab3/* .
 
 # Інсталюємо всі залежності
 RUN pipenv install
