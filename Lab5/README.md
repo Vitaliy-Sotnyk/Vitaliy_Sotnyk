@@ -1,7 +1,7 @@
 # LAB_5
 #### 1. Створив папки my_app & tests. У файлі requirements є необхідні бібліотеки для подальшої роботи. 
 #### 2. Сервер запускається правильно та при переході на сайт видається помилка. ![Image alt](image/1.jpg) ![Image alt](image/2.jpg)
-#### 3.Після роботи з google і пошуку вирішення проблеми, отримав наступне.[Image alt](image/3.jpg) [Image alt](image/4.jpg)
+#### 3.Після роботи з google і пошуку вирішення проблеми, отримав наступне.![Image alt](image/3.jpg) ![Image alt](image/4.jpg)
 #### 4. Видалив файли та створив Dockerfile.app Dockerfile.tests Makefile.
 #### 5. Директива Makefile:
 ####    STATES := app tests - присвоює змінній STATES розширений діапазон значень (app, tests), які перебираються при виконанні.
