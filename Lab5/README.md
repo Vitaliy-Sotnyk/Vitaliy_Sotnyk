@@ -14,6 +14,8 @@
 #### 6. Створив, використовуючи команду make Docker імеджі для додатку та для тестів використовуючи команди make add, make tests, make run, make tests-add. ![Image alt](image/5.jpeg) ![Image alt](image/6.jpeg)
 ####
 ####    та отримав наступне:
-####![Image alt](image/7.jpeg) ![Image alt](image/8.jpeg)  ![Image alt](image/9.jpeg)
+#### ![Image alt](image/7.jpeg) 
+#### ![Image alt](image/8.jpeg) 
+#### ![Image alt](image/9.jpeg)
 
 
