@@ -2,7 +2,7 @@
 #### 1. Створив папки my_app & tests. У файлі requirements є необхідні бібліотеки для подальшої роботи. 
 #### 2. Сервер запускається правильно та при переході на сайт видається помилка. ![Image alt](image/1.jpeg) ![Image alt](image/2.jpeg)
 ####
-3
+
 #### 3.Після роботи з google і пошуку вирішення проблеми, отримав наступне.![Image alt](image/3.jpeg) ![Image alt](image/4.jpeg)
 #### 4. Видалив файли та створив Dockerfile.app Dockerfile.tests Makefile.
 #### 5. Директива Makefile:
@@ -30,7 +30,7 @@
 #### ![Image alt](image/11.jpeg) 
 ####
 #### Для роботи cайту теба ввести адресу http://0.0.0.0:80. Це зумовлено тим, що в docker-compose.yml файлі встановлено "expose"-порт 80.
-####![Image alt](image/12.jpeg) 
+#### ![Image alt](image/12.jpeg) 
 #### 12. Docker-compose створив докер імеджі. Теги які були до тогo змінив, bobas/lab5-examples:compose-app та bobas/lab5-examples:compose-tests на otamanych/lab_develops_course:compose-app та otamanych/lab_develops_course:compose-tests. Змінив не самі теги, а репозиторій.
 #### 13. Почистив ресурси створені компоуз виконавши команду  docker-compose down.
 #### 14. Заватажив імеджі до хабу командою sudo docker-compose push.
