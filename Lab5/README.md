@@ -38,15 +38,7 @@
 #### 13. Почистив ресурси створені компоуз виконавши команду  docker-compose down.
 #### 14. Заватажив імеджі до хабу командою sudo docker-compose push.
 #### 15. docker-compose працює лише з докером. Якщо потрібно виконати системні команди або щось з системою краще makefile.
-#### 16. 
-
-=======
-#### 6. Створив, використовуючи команду make Docker імеджі для додатку та для тестів використовуючи команди make add, make tests, make run, make tests-add. ![Image alt](image/5.jpeg) ![Image alt](image/6.jpeg)
-####
-####    та отримав наступне:
-#### ![Image alt](image/7.jpeg) 
-#### ![Image alt](image/8.jpeg) 
-#### ![Image alt](image/9.jpeg)
->>>>>>> 6c2aed21e5532fd92e9af93a553f57273e45a273
-
+#### 16. Взяв для роботи docker-compose.yaml з 5 лаби і використав його для виконання завдання. B файлі settings.py, що можна знайти таким шляхом Lab3/firstsite/, та змінивши дерективу ALLOWED_HOSTS = ['0.0.0.0', 'app'], запустив  усе командою sudo docker-compose - p Lab4 в папці Lab4.
+#### Отримав наступний результат
+#### ![Image alt](image/13.jpeg)
 
