@@ -26,4 +26,4 @@ docker-push:
 	@docker push $(REPO):tests
 
 docker-purge:
-	@docker image prune -a --force
+        @docker image prune -a --force
