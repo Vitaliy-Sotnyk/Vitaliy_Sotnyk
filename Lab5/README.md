@@ -1,11 +1,6 @@
 # LAB_5
 #### 1. Створив папки my_app & tests. У файлі requirements є необхідні бібліотеки для подальшої роботи. 
 #### 2. Сервер запускається правильно та при переході на сайт видається помилка. ![Image alt](image/1.jpeg) ![Image alt](image/2.jpeg)
-<<<<<<< HEAD
-=======
-####
-
->>>>>>> ea91ab08a84fbb94db3963ba8ab3171a03f557f0
 #### 3.Після роботи з google і пошуку вирішення проблеми, отримав наступне.![Image alt](image/3.jpeg) ![Image alt](image/4.jpeg)
 #### 4. Видалив файли та створив Dockerfile.app Dockerfile.tests Makefile.
 #### 5. Директива Makefile:
@@ -40,11 +35,7 @@
 #### 15. docker-compose працює лише з докером. Якщо потрібно виконати системні команди або щось з системою краще makefile.
 #### 16. Взяв для роботи docker-compose.yaml з 5 лаби і використав його для виконання завдання. B файлі settings.py, що можна знайти таким шляхом Lab3/firstsite/, та змінивши дерективу ALLOWED_HOSTS = ['0.0.0.0', 'app'], запустив  усе командою sudo docker-compose - p Lab4 в папці Lab4.
 #### Отримав наступний результат
-<<<<<<< HEAD
 #### ![Image alt](image/13.jpeg) 
-
-
 =======
 #### ![Image alt](image/13.jpeg)
->>>>>>> ea91ab08a84fbb94db3963ba8ab3171a03f557f0
 
